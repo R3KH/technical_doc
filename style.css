@@ -1,0 +1,75 @@
+ /* Everything */
+ body {
+    font-size: 17spx;
+}
+
+/* Header */
+#navbar {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 250px;
+   height: 100%;
+   text-align: center;
+   font-size: 21px;
+   border-right: 1px solid black;
+}
+#navbar header {
+   font-weight: bold;
+   font-size: 24px;
+}
+#navbar header, #navbar div {
+   padding: 30px 0;
+   border-bottom: 1px solid black;
+}
+#navbar .nav-link {
+   text-decoration: none;
+   color: black;
+}
+
+/* Main */
+#main-doc {
+    position: absolute;
+    left: 300px;
+}
+section header {
+   font-weight: bold;
+   font-size: 32px;
+}
+article {
+    margin: 15px;
+}
+code {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/* MediaQ */
+@media screen and (max-width: 740px) {
+   html, body {
+       height: 100%;
+       margin: 0;
+   }
+   #navbar {
+       position: relative;
+       width: 100%;
+       height: 200px;
+       overflow: auto;
+       border-bottom: 3px solid black;
+   }
+   #navbar header {
+       border-bottom: 2px solid black;
+   }
+   #navbar div {
+       padding: 15px 0;
+   }
+   #main-doc {
+       left: 0;
+       top: 250px;
+   }
+   #main-doc section {
+       margin-left: 15px;
+   }
+ }
